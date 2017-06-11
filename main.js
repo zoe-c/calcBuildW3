@@ -1,22 +1,38 @@
-// // Select the input element with the id 'todoInput' and store in a variable `todoInput`.
-// var todoInput = document.querySelector('#todoInput');
-//
-// // console.log(todoInput);
-// // Select the ordered list element with the id 'todoList' and store in a variable `todoList`.
-// var todoList = document.querySelector('#todoList');
-// // console.log(todoList);
-//
-// // Add a keypress event listener to `todoInput`.
-// todoInput.addEventListener('keypress', function(event) {
-//    if (event.keyCode == 13) {
-//    var todoContent = event.target.value;
-//    event.target.value = '';
-//    // todoContent = '';       // .createTextNode () assigned to a variable and appended to the list item is another way to create or return a text output. here, we just assigned the TARGET ELEMENT'S (li) VALUE (upon event trigger) TO A STRING.
-//    // woo
-//    var newTodoLi = document.createElement('li');
-//
-//    newTodoLi.textContent = todoContent;
-//    todoList.appendChild(newTodoLi);
+
+//gets buttons into "nodeList"********KEEP THIS. STEP 1 OF VALUE EXTRACTION
+var nodeList = document.querySelectorAll('.button');
+console.log(nodeList);
+// *********************
+
+// //gets value out of nodeList
+// console.log(nodeList[1].value);
+// //returns the 2nd button (7) as 7.
+
+
+
+// //attempt at looping through nodeList array of nodes (buttons and their id's) to store in new Array and rename newArray as valArray
+// //didn't work.
+// var valArray = function getValues(nodeList) {
+//    let newArray=[];
+//    for (i = 0; i <= (nodeList.length - 1); i++) {
+//    newArray.push(nodeList[i].value);
+//    }
+//    valArray = newArray;
+//    return valArray;
 // }
-//    return event;
-// });
+//
+// console.log(valArray);
+
+
+var nodeList = document.querySelectorAll('.button');
+var valArray = [];
+valArray.push(nodeList[1].value);
+valArray.push(nodeList[2].value);
+valArray.push(nodeList[3].value);
+valArray.push(nodeList[5].value);
+valArray.push(nodeList[6].value);
+valArray.push(nodeList[7].value);
+valArray.push(nodeList[9].value);
+valArray.push(nodeList[10].value);
+valArray.push(nodeList[11].value);
+valArray.push(nodeList[13].value);
