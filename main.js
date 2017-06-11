@@ -1,5 +1,5 @@
 
-//gets buttons into "nodeList"********KEEP THIS. STEP 1 OF VALUE EXTRACTION
+//gets buttons into "nodeList"********KEEP THIS. STEP 1 OF VALUE EXTRACTION************************
 var nodeList = document.querySelectorAll('.button');
 console.log(nodeList);
 // *********************
@@ -24,6 +24,8 @@ console.log(nodeList);
 // console.log(valArray);
 
 
+
+//made an array of all number values called valArray. they are still strings.*******************
 var nodeList = document.querySelectorAll('.button');
 var valArray = [];
 valArray.push(nodeList[1].value);
@@ -36,3 +38,12 @@ valArray.push(nodeList[9].value);
 valArray.push(nodeList[10].value);
 valArray.push(nodeList[11].value);
 valArray.push(nodeList[13].value);
+
+console.log(valArray);
+
+
+
+//turn array of string values into number values
+var numValArray = valArray.map(Number);
+console.log(numValArray);
+//numValArray now holds all number values in an array. sweet.
