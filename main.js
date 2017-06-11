@@ -48,6 +48,31 @@ console.log(numValArray);
 //numValArray now holds all number values in an array. sweet.
 
 
+//array of operands still in strings
+var operArray = [];
+operArray.push(nodeList[4].value);
+operArray.push(nodeList[8].value);
+operArray.push(nodeList[12].value);
+operArray.push(nodeList[16].value);
+
+console.log(operArray);
+
+
+
 //need to make event listener for each button, when clicked, to retrieve that button and store it in a calculationArray
 //need calculationArray to display in <output> and hold values/ operands/ until = is pressed.
 //need to figure out event listener to trigger an operand without calculating it just yet!
+
+//holding area/ print area..ASSIGNED TO <output>!!
+//this is what will hold your numbers and what you will calculate
+var displayArray = [];
+var outPut = document.querySelector('output').textContent = displayArray;
+//i need to make this a function? so that i can call it when i make the event listeners for the buttons to push to it? I DONT KNOW.
+
+
+//add event-listeners to trigger button click and appropriate numerical value retrieval
+//push it to the displayArray
+
+nodeList[1].addEventListener('click', function(event){
+    displayArray.push(numValArray[0]);
+});
