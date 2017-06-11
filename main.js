@@ -1,14 +1,13 @@
 
-//gets buttons into "nodeList"********KEEP THIS. STEP 1 OF VALUE EXTRACTION************************
+//buttons into "nodeList"********KEEP THIS. STEP 1 OF VALUE EXTRACTION************************
 var nodeList = document.querySelectorAll('.button');
 console.log(nodeList);
 // *********************
 
+
 // //gets value out of nodeList
 // console.log(nodeList[1].value);
 // //returns the 2nd button (7) as 7.
-
-
 
 // //attempt at looping through nodeList array of nodes (buttons and their id's) to store in new Array and rename newArray as valArray
 // //didn't work.
@@ -47,3 +46,8 @@ console.log(valArray);
 var numValArray = valArray.map(Number);
 console.log(numValArray);
 //numValArray now holds all number values in an array. sweet.
+
+
+//need to make event listener for each button, when clicked, to retrieve that button and store it in a calculationArray
+//need calculationArray to display in <output> and hold values/ operands/ until = is pressed.
+//need to figure out event listener to trigger an operand without calculating it just yet!
